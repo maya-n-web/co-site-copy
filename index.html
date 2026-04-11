@@ -43,133 +43,149 @@ Company
 
 <body>
   <header id="header">
-    <h1><a href="index.html"><img class="logo" src="img/logo.svg" alt="Web Entertainment Design" width="100"
+    <h1><a href="index.html"><img class="logo" src="img/logo.svg" alt="Web Entertainment Design" width="50"
           height="50"></a></h1>
 
     <nav class="main-nav">
       <ul class="nav-menu">
-        <li><a class="item" href="#news">NEWS</a></li>
-        <li><a class="item" href="#about">ABOUT</a></li>
-        <li><a class="item" href="#bus">BUSINESS</a></li>
-        <li><a class="item" href="#company">COMPANY</a></li>
+        <li class="item"><a href="#news">NEWS</a></li>
+        <li class="item"><a href="#about">ABOUT</a></li>
+        <li class="item"><a href="#bus">BUSINESS</a></li>
+        <li class="item"><a href="#company">COMPANY</a></li>
       </ul>
 
-
-      <a href="#contact">お問い合わせ</a>
+      <a class="contact" #contact">お問い合わせ</a>
     </nav>
   </header>
 
 
 
   <main class="main">
-    <img class="main-img" src="img/mainvisual.jpg" alt="オフィスのイメージ画像" width="1000" height="933">
+    <img class="main-img" src="img/mainvisual.jpg" alt="オフィスのイメージ画像" loading="lazy" width="1000" height="933">
+    <div class="wrapper">
 
 
-    <section>
-      <h2 id="news">NEWS</h2>
-      <span>ニュース</span>
-      <ul>
-        <li>
-          <article>
-            <time datetime="2021.01.01">2021.01.01</time><span>NEWS</span>
-            <a href=""></a>
-          </article>
-        </li>
-        <li>
-          <article>
-            <time datetime="2021.01.01">2021.01.01</time><span>NEWS</span>
-            <a href=""></a>
-          </article>
-        </li>
-        <li>
-          <article>
-            <time datetime="2021.01.01">2021.01.01</time><span>NEWS</span>
-            <a href=""></a>
-          </article>
-        </li>
-      </ul>
-    </section>
+      <section>
+        <div class="news">
+          <h2 id="news">NEWS</h2>
+          <span class="sub-title">ニュース</span>
+          <ul class="news-title">
+            <li>
+              <article>
+                <time datetime="2021.01.01">2021.01.01</time>
+                <span>NEWS</span><br>
+                <a class="heading-tittle" href="#">タイトルトトルルタイトルタイトル</a>
+              </article>
+            </li>
+            <li>
+              <article>
+                <time datetime="2021.01.01">2021.01.01</time><span>NEWS</span><br>
+                <a class="heading-tittle" href="#">タイトルタタイトルタイトル</a>
+              </article>
+            </li>
+            <li>
+              <article>
+                <time datetime="2021.01.01">2021.01.01</time><span>NEWS</span><br>
+                <a class="heading-tittle" href="#">タイトルタイルタイトル</a>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </section>
 
-    <section>
-      <img class="main-img" src="img/about.jpg" alt="イメージ画像" width="770" height="400">
+      <section>
+        <img class="about-img" src="img/about.jpg" alt="イメージ画像" loading="lazy" width="770" height="400">
 
-      <h2 id="about">ABOUT</h2>
-      <span>私たちについて</span>
-      <p>
-        テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキス
-      </p>
-      <p>
-        テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキス
-      </p>
-      <p>
-        テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキス
-      </p>
-    </section>
+        <div class="about">
+          <h2 id="about">ABOUT</h2>
+          <span class="sub-title">私たちについて</span>
+          <p class="main-text">
+            テキストテキストテキストテキストテキストテキストテキストテキ
+          </p>
+          <p class="main-text">
+            テキストテキストテキストテキストテキストテキストテキストテキキストテキストテキストテキス
+          </p>
+          <p class="main-text">
+            テキストテキストテキストテキストテストテキストテキストテキス
+          </p>
+        </div>
+      </section>
 
-    <section>
-      <h2 id="bus">BUSINESS</h2>
-      <span>事業内容</span>
-      <ul>
-        <li>web制作・マーケティング</li>
-        <img class="main-img" src="img/business1.jpg" alt="ミーティングイメージ画像" width="1000" height="933">
+      <section>
+        <div class="bus">
 
-        <li>インターネットメディア事業</li>
-        <img class="main-img" src="img/business2.jpg" alt="ノートパソコンの画面に表示されたYouTubeのホーム画面" width="1000" height="933">
+          <h2 id="bus">BUSINESS</h2>
+          <span class="sub-title">事業内容</span>
+          <ul>
+            <li class="list">web制作・マーケティング</li>
+            <img class="bus-img" src="img/business1.jpg" alt="ミーティングイメージ画像" loading="lazy" width="1000" height="933">
 
-        <li>プロモーション企画・制作</li>
-        <img class="main-img" src="img/business3.jpg" alt="カメラの画像" width="1000" height="933">
+            <li class="list">インターネットメディア事業</li>
+            <img class="bus-img" src="img/business2.jpg" alt="ノートパソコンの画面に表示されたYouTubeのホーム画面" loading="lazy" width="1000"
+              height="933">
 
-        <li>ソーシャル企画・制作</li>
-        <img class="main-img" src="img/business4.jpg" alt="スクリーンに映る複数のアプリのアイコン" width="1000" height="933">
+            <li class="list">プロモーション企画・制作</li>
+            <img class="bus-img" src="img/business3.jpg" alt="カメラの画像" loading="lazy" width="1000" height="933">
 
-      </ul>
-    </section>
+            <li class="list">ソーシャル企画・制作</li>
+            <img class="bus-img" src="img/business4.jpg" alt="スクリーンに映る複数のアプリのアイコン" loading="lazy" width="1000"
+              height="933">
 
-    <section>
-      <h2 id="company">COMPANY</h2>
-      <span>会社情報</span>
-      <dl>
-        <dt>会社名</dt>
-        <dd>ウェブエンターテイメントデザイン株式会社</dd>
+          </ul>
+        </div>
 
-        <dt>所在地</dt>
-        <dd>東京都渋谷区桜丘町99-9 West Building 3F</dd>
+      </section>
 
-        <dt>代表</dt>
-        <dd>ＸＸＸＸＸＸ</dd>
+      <section>
+        <div class="company">
 
-        <dt>設立</dt>
-        <dd>2021年1月1日</dd>
+          <h2 id="company">COMPANY</h2>
+          <span class="sub-title">会社情報</span>
 
-        <dt>資本金</dt>
-        <dd>3,000,000円</dd>
+          <dl class="info">
+            <dt>会社名</dt>
+            <dd>ウェブエンターテイメントデザイン株式会社</dd>
 
-        <dt>事業内容</dt>
-        <dd>Web制作・マーケティング</dd>
+            <dt>所在地</dt>
+            <dd>東京都渋谷区桜丘町99-9 West Building 3F</dd>
 
-        <dt>インターネットメディア事業</dt>
-        <dd>プロモーション企画・制作</dd>
-        <dd>ソーシャル企画・運営</dd>
+            <dt>代表</dt>
+            <dd>ＸＸＸＸＸＸ</dd>
 
-      </dl>
-      <figure>
-        <img class="main-img" src="img/company.jpg" alt="オフィスのイメージ画像" width="1000" height="933">
-      </figure>
-    </section>
+            <dt>設立</dt>
+            <dd>2021年1月1日</dd>
+
+            <dt>資本金</dt>
+            <dd>3,000,000円</dd>
+
+            <dt>事業内容</dt>
+            <div class="com-list">
+              <dd>Web制作・マーケティング</dd>
+
+              <dd>インターネットメディア事業</dd>
+              <dd>プロモーション企画・制作</dd>
+              <dd>ソーシャル企画・運営</dd>
+            </div>
+          </dl>
+      </section>
   </main>
 
 
-  <footer class="footer">
-    <img src="img/logo.svg" alt="Web Entertainment Design" width="100" height="50">
-    <ul>
+  <footer class="footer wrapper">
+    <figure>
+      <img class="last-img" src="img/company.jpg" alt="オフィスのイメージ画像" loading="lazy" width="1000" height="933">
+    </figure>
+    <img class="logo last-logo" src="img/logo.svg" alt="Web Entertainment Design" width="50" height="50">
+    <ul class="last-info">
       <li>Web Entertainment Design Inc.</li>
       <li>West Building 3F</li>
       <li>9-99 Sakuragaokacho Shibuya-ku</li>
       <li>Tokyo, Japan 150-0031</li>
       <li>T/99-9999-9999</li>
     </ul>
-    <p><small>&copy; Web Entertainment Design Inc.</small></p>
+    <p class="copy-right"><small>&copy; Web Entertainment Design Inc.</small></p>
   </footer>
+  </div>
   </div>
 </body>
 
