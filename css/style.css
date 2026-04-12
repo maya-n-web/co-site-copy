@@ -479,23 +479,42 @@ dd {
     /* 会社情報 */
 
     .company {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        max-width: 1000px;
+        position: relative;
+        /* 画像の配置基準にする */
+        overflow: visible;
+        /* 重要：はみ出した部分を表示する */
+
+        max-width: 50%;
         height: auto;
-        margin: 0 auto;
+        margin: 0 100px;
         padding: 50px;
         background-color: #ffffff;
     }
 
+
     /* フッター */
 
+
+
     .last-img {
-        width: 550px;
+        width: 30%;
         height: auto;
         aspect-ratio: 5 / 4;
         vertical-align: bottom;
-        padding-top: 5px;
+        position: absolute;
+        /* 親要素の.companyを基準に自由に動かす */
+        top: 50%;
+        /* 上から50%の位置へ */
+        transform: translateY(-50%);
+        /* 自身の高さ半分戻して中央揃え */
+
+        right: -500px;
+        /* ここで右側に「はみ出す量」を調整 */
+        width: 600px;
+        /* 親要素の幅を無視して大きなサイズを指定 */
+        z-index: 1;
+        /* 重なり順を下に（テキストが上） */
+        object-fit: cover;
     }
 
     .last-logo {
