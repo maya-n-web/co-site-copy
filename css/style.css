@@ -1,6 +1,5 @@
 @charset "UTF-8";
 
-
 /* 共通 */
 html {
     font-size: 62.5%;
@@ -12,7 +11,8 @@ body {
     background-color: #f0ebebe8;
     font-size: 2rem;
     font-style: normal;
-    font-family: Noto+Sans+JP;
+    /* 修正：URLパラメータ形式から正規のフォント名指定へ修正 */
+    font-family: 'Noto Sans JP', sans-serif;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -44,10 +44,7 @@ img {
     vertical-align: bottom;
 }
 
-
-
 /* ヘッダー */
-
 .header {
     width: 100%;
     min-width: 370px;
@@ -56,7 +53,6 @@ img {
     padding: 1rem;
     padding-top: 0px;
 }
-
 
 .contact {
     display: none;
@@ -83,16 +79,14 @@ h1 {
     margin-left: -10px;
 }
 
-
-/* メイン  */
-
+/* メイン */
 h2 {
     font-size: 3.6rem;
     font-weight: normal;
     letter-spacing: 1rem;
 }
 
-/* 写真*/
+/* 写真 */
 .main-img {
     width: 100%;
     max-width: 100%;
@@ -111,11 +105,9 @@ h2 {
     aspect-ratio: 5/4;
     object-fit: cover;
     vertical-align: bottom;
-
 }
 
 /* ニュース */
-
 .news {
     display: flex;
     flex-direction: column;
@@ -140,7 +132,7 @@ h2 {
     margin-bottom: 1.5rem;
 }
 
-.heading-tittle {
+.heading-title {
     display: block;
     margin-top: 1.5rem;
 }
@@ -152,11 +144,9 @@ h2 {
     font-size: small;
     padding: 1px;
     margin: 5px;
-
 }
 
-/* 私たちについて */
-
+/* ABOUT */
 .about,
 .bus {
     display: flex;
@@ -169,8 +159,7 @@ h2 {
     font-size: 1.5rem;
 }
 
-/* ＢＵＳＩＮＥＳＳ */
-
+/* BUSINESS */
 .bus-img {
     width: 100%;
     max-width: 100%;
@@ -183,6 +172,8 @@ h2 {
     font-weight: bold;
     font-size: 1.5rem;
     padding: 1rem;
+    position: relative; 
+    /* Before要素の基準のため追加 */
 }
 
 .list::before {
@@ -192,12 +183,10 @@ h2 {
     left: 0;
     color: #000000;
     font-weight: bold;
-    margin-left: 16px;
+    margin-left: 0; /* 位置調整 */
 }
 
-
 /* 会社情報 */
-
 .company {
     background-color: #ffffff;
     padding: 30px;
@@ -219,9 +208,7 @@ dd {
     line-height: 0.5;
 }
 
-
 /* フッター */
-
 .last-img {
     width: 100%;
     max-width: 100%;
@@ -229,10 +216,12 @@ dd {
     aspect-ratio: 6/7;
     object-fit: cover;
     vertical-align: bottom;
-    margin-bottom: 30px;
+    margin-top: 30px;
+    background-color: #f0ebebe8;
+    box-shadow: 0 0 0 8vw #f0ebebe8;
 }
 
-.logo,
+
 .last-logo {
     margin-left: 0;
     margin-bottom: 1rem;
@@ -253,45 +242,18 @@ dd {
 
 
 
-
-
-
-
-
 /* デスクトップ用 */
 @media(min-width:900px) {
-
-
     .wrapper {
         width: 100%;
         padding: 0px;
     }
-
-    .eng-language {
-        letter-spacing: 0.2em;
-    }
-
-    a {
-        color: #514e4e;
-        text-decoration: none;
-    }
-
-    img {
-        width: 100%;
-        max-width: 100%;
-        height: auto;
-        vertical-align: bottom;
-    }
-
-
-    /* ヘッダー */
 
     .header {
         padding: 0px;
     }
 
     .main-nav {
-        /* naviメニューを横ぞろえ */
         display: flex;
     }
 
@@ -303,26 +265,19 @@ dd {
     }
 
     .nav-menu {
-        /* リストの中の文字の縦の位置を調整 */
         align-items: flex-end;
         padding-bottom: 15px;
-
         gap: 10px;
         line-height: 1;
         font-size: 1.5rem;
         font-weight: 500;
         margin-left: 30px;
-
     }
-
 
     .contact {
         width: 15%;
         display: inline-block;
         text-align: center;
-
-        /* 左に余白を全部持ってくることで右に突き放す */
-        /* 細かい位置は余白で調整 */
         margin-left: auto;
         font-size: 1.2rem;
         background-color: #000000;
@@ -331,20 +286,10 @@ dd {
         text-decoration: none;
     }
 
-
-
-    /* メイン  */
-
-
-
-    /* 写真*/
     .main-img {
         aspect-ratio: 16 / 9;
-        /* 横長に変更 */
         max-height: 90vh;
-        /* 画面の高さの8割までに抑える */
         object-fit: cover;
-        /* 画像の縦横比を崩さずに、指定したサイズ（枠）を隙間なく埋める */
     }
 
 
@@ -354,15 +299,6 @@ dd {
         display: flex;
         margin: 5% 10% 10% 10%;
         gap: 10px;
-    }
-
-    .sub-title {
-        display: inline-block;
-        width: 28%;
-        border-bottom: 1px solid #000000;
-        margin: 0px 0px 30px 0px;
-        padding-bottom: 20px;
-        font-size: 1.3rem;
     }
 
     .news-title {
@@ -376,20 +312,18 @@ dd {
 
     time {
         font-size: 1.2rem;
-
     }
 
     article {
         border-left: 1px solid #000000;
         padding: 0px 50px 10px 30px;
-
     }
 
     .art1 {
         border: none;
     }
 
-    .heading-tittle {
+    .heading-title {
         display: block;
         padding: 1.5rem;
         padding-left: 0rem;
@@ -397,9 +331,7 @@ dd {
         margin-top: 0rem;
     }
 
-
-    /* 私たちについて */
-
+    /* ABOUT */
     .about-img {
         width: 50%;
         aspect-ratio: 7 / 4;
@@ -415,14 +347,13 @@ dd {
         padding-top: 10%;
     }
 
-    .about .sub-title {
-        margin-bottom: 80px;
+
+    /* BUSINESS */
+  .bus_com_wrapper{
+    max-width: 1000px;
+    margin: 0 auto;
     }
 
-
-
-
-    /* ＢＵＳＩＮＥＳＳ */
 
     .bus {
         width: 100%;
@@ -431,7 +362,7 @@ dd {
     }
 
     .bus-top {
-        margin-left: 10%;
+      margin-bottom: 30px;
     }
 
     .bus-img {
@@ -448,23 +379,20 @@ dd {
         gap: 40px 60px;
         align-items: start;
         max-width: 1000px;
-        /* 広がりすぎないように制限 */
         width: 100%;
-        /* スマホ等でレスポンシブにするため */
         margin: 0 auto;
-        /* これでも中央寄せを補強 */
-    }
-
-    .bus .sub-title {
-        margin-bottom: 10%;
     }
 
     .list {
         font-weight: bold;
         font-size: 1.5rem;
-        list-style: "ー";
         padding-left: 5px;
         padding-bottom: 5px;
+    }
+
+    /* リスト要素の疑似要素を非表示にする設定の継承 */
+    .list::before {
+        display: none;
     }
 
     .list:nth-child(2),
@@ -472,18 +400,9 @@ dd {
         transform: translateY(-100px);
     }
 
-    .list::before {
-        display: none;
-    }
-
-    /* 会社情報 */
-
     .company {
         position: relative;
-        /* 画像の配置基準にする */
         overflow: visible;
-        /* 重要：はみ出した部分を表示する */
-
         max-width: 50%;
         height: auto;
         margin: 0 100px;
@@ -491,35 +410,19 @@ dd {
         background-color: #ffffff;
     }
 
-
-    /* フッター */
-
-
-
     .last-img {
-        width: 30%;
+        width: 600px;
         height: auto;
         aspect-ratio: 5 / 4;
         vertical-align: bottom;
         position: absolute;
-        /* 親要素の.companyを基準に自由に動かす */
         top: 50%;
-        /* 上から50%の位置へ */
         transform: translateY(-50%);
-        /* 自身の高さ半分戻して中央揃え */
-
-        right: -500px;
-        /* ここで右側に「はみ出す量」を調整 */
-        width: 600px;
-        /* 親要素の幅を無視して大きなサイズを指定 */
+        right: -380px;
         z-index: 1;
-        /* 重なり順を下に（テキストが上） */
         object-fit: cover;
-    }
-
-    .last-logo {
-        margin-left: 0px;
-        padding-left: 0px;
+        box-shadow: 0 0 0 0vw ;
+}
     }
 
     .footer {
@@ -539,7 +442,3 @@ dd {
     .last-info {
         line-height: 1.5;
     }
-
-    .copy-right {}
-
-}

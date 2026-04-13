@@ -9,50 +9,20 @@
 
   <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="icon" href="img/favicon.ico" alt="WED">
+  <link rel="icon" href="img/favicon.ico">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link
     href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+JP:wght@200..900&display=swap"
     rel="stylesheet">
 </head>
 
-<!-- 
-コンテンツ幅
-メインビジュアルとAboutは全幅で他は1000pxです。
-ヘッダー
-右上の「お問い合わせ」ボタンは、スマホ表示の場合は非表示にします。
-
-メインビジュアル
-全幅で高さは画面下に合わせます。
-
-各セクションのタイトル
-英字タイトルと日本語タイトルで記述します。
-英字タイトルは「letter-spacing」で文字の間隔を少し広くします。
-News
-ニュースエリアを3分割して、間に罫線を引きます。
-日付はtimeタグを使用してみましょう。
-
-About
-全幅で表示します。
-画像の高さは400px固定です。
-
-Business
-高さをずらした横並び配置です。
-スマホ表示の画像の並び順を確認した上で、適切なコーディングを考えてみましょう。
-
-Company
-横幅は1000pxで、画像を上に重ねます。
-画像の高さは400px固定です。
-
-レスポンシブ
-ブレークポイントは900pxです。 -->
-
 <body>
   <header class="header" id="header">
     <nav class="main-nav">
       <h1 class="logo">
         <a href="index.html">
-          <img src="img/logo.svg" alt="Web Entertainment Design" width="50" height="50"></a>
+          <img src="img/logo.svg" alt="Web Entertainment Design" width="50" height="50">
+        </a>
       </h1>
 
       <ul class="nav-menu">
@@ -62,16 +32,13 @@ Company
         <li><a href="#company">COMPANY</a></li>
       </ul>
 
-      <a class="contact" #contact">お問い合わせ</a>
+      <a class="contact" href="#contact">お問い合わせ</a>
     </nav>
   </header>
-
-
 
   <main class="main">
     <img class="main-img" src="img/mainvisual.jpg" alt="オフィスのイメージ画像" loading="lazy" width="1400" height="600">
     <div class="wrapper">
-
 
       <section>
         <div class="news">
@@ -80,21 +47,21 @@ Company
           <ul class="news-title">
             <li>
               <article class="art1">
-                <time datetime="2021.01.01">2021.01.01</time>
+                <time datetime="2021-01-01">2021.01.01</time>
                 <span>NEWS</span><br>
-                <a class="heading-tittle" href="#">タイトルトトルルタイトルタイトル</a>
+                <a class="heading-title" href="#">タイトルタイトルタイトルタイトル</a>
               </article>
             </li>
             <li>
               <article>
-                <time datetime="2021.01.01">2021.01.01</time><span>NEWS</span><br>
-                <a class="heading-tittle" href="#">タイトルタタイトルタイトル</a>
+                <time datetime="2021-01-01">2021.01.01</time><span>NEWS</span><br>
+                <a class="heading-title" href="#">タイトルタイトルタイトルタイトル</a>
               </article>
             </li>
             <li>
               <article>
-                <time datetime="2021.01.01">2021.01.01</time><span>NEWS</span><br>
-                <a class="heading-tittle" href="#">タイトルタイルタイトル</a>
+                <time datetime="2021-01-01">2021.01.01</time><span>NEWS</span><br>
+                <a class="heading-title" href="#">タイトルタイトルタイトルタイトル</a>
               </article>
             </li>
           </ul>
@@ -104,7 +71,6 @@ Company
       <section>
         <div class="about-box">
           <img class="about-img" src="img/about.jpg" alt="イメージ画像" loading="lazy" width="1400" height="600">
-
           <div class="about">
             <h2 id="about">ABOUT</h2>
             <span class="sub-title">私たちについて</span>
@@ -121,74 +87,63 @@ Company
         </div>
       </section>
 
-      <section>
-        <div class="bus">
-          <div class="bus-top">
-            <h2 id="bus">BUSINESS</h2>
-            <span class="sub-title">事業内容</span>
-          </div>
-          <ul class="bus-list">
-            <li class="list">Web制作・マーケティング<br>
-              <img class="bus-img" src="img/business1.jpg" alt="ミーティングイメージ画像" loading="lazy" width="1000" height="933">
-            </li>
-
-
-            <li class="list">プロモーション企画・制作<br>
-              <img class="bus-img" src="img/business3.jpg" alt="カメラの画像" loading="lazy" width="1000" height="933">
-            </li>
-
-            <li class="list">インターネットメディア事業<br>
-              <img class="bus-img" src="img/business2.jpg" alt="ノートパソコンの画面に表示されたYouTubeのホーム画面" loading="lazy"
-                width="1000" height="933">
-            </li>
-            <li class="list">ソーシャル企画・制作<br>
-              <img class="bus-img" src="img/business4.jpg" alt="スクリーンに映る複数のアプリのアイコン" loading="lazy" width="1000"
-                height="933">
-            </li>
-
-          </ul>
-        </div>
-
-      </section>
-
-      <section>
-        <div class="company">
-          <h2 id="company">COMPANY</h2>
-          <span class="sub-title">会社情報</span>
-          <dl class="info">
-            <dt>会社名</dt>
-            <dd>ウェブエンターテイメントデザイン株式会社</dd>
-
-            <dt>所在地</dt>
-            <dd>東京都渋谷区桜丘町99-9 West Building 3F</dd>
-
-            <dt>代表</dt>
-            <dd>ＸＸＸＸＸＸ</dd>
-
-            <dt>設立</dt>
-            <dd>2021年1月1日</dd>
-
-            <dt>資本金</dt>
-            <dd>3,000,000円</dd>
-
-            <dt>事業内容</dt>
-            <div class="com-list">
-              <dd>Web制作・マーケティング</dd>
-
-              <dd>インターネットメディア事業</dd>
-              <dd>プロモーション企画・制作</dd>
-              <dd>ソーシャル企画・運営</dd>
+      <div class="bus_com_wrapper">
+        <section>
+          <div class="bus">
+            <div class="bus-top">
+              <h2 id="bus">BUSINESS</h2>
+              <span class="sub-title">事業内容</span>
             </div>
-          </dl>
-          <figure>
-            <img class="last-img" src="img/company.jpg" alt="オフィスのイメージ画像" loading="lazy" width="1000" height="933">
-          </figure>
-        </div>
+            <ul class="bus-list">
+              <li class="list">Web制作・マーケティング<br>
+                <img class="bus-img" src="img/business1.jpg" alt="ミーティングイメージ画像" loading="lazy" width="1000"
+                  height="933">
+              </li>
+              <li class="list">プロモーション企画・制作<br>
+                <img class="bus-img" src="img/business3.jpg" alt="カメラの画像" loading="lazy" width="1000" height="933">
+              </li>
+              <li class="list">インターネットメディア事業<br>
+                <img class="bus-img" src="img/business2.jpg" alt="ノートパソコンの画面に表示されたYouTubeのホーム画面" loading="lazy"
+                  width="1000" height="933">
+              </li>
+              <li class="list">ソーシャル企画・制作<br>
+                <img class="bus-img" src="img/business4.jpg" alt="スクリーンに映る複数のアプリのアイコン" loading="lazy" width="1000"
+                  height="933">
+              </li>
+            </ul>
+          </div>
+        </section>
 
-
-      </section>
+        <section>
+          <div class="company">
+            <h2 id="company">COMPANY</h2>
+            <span class="sub-title">会社情報</span>
+            <dl class="info">
+              <dt>会社名</dt>
+              <dd>ウェブエンターテイメントデザイン株式会社</dd>
+              <dt>所在地</dt>
+              <dd>東京都渋谷区桜丘町99-9 West Building 3F</dd>
+              <dt>代表</dt>
+              <dd>ＸＸＸＸＸＸ</dd>
+              <dt>設立</dt>
+              <dd>2021年1月1日</dd>
+              <dt>資本金</dt>
+              <dd>3,000,000円</dd>
+              <dt>事業内容</dt>
+              <div class="com-list">
+                <dd>Web制作・マーケティング</dd>
+                <dd>インターネットメディア事業</dd>
+                <dd>プロモーション企画・制作</dd>
+                <dd>ソーシャル企画・運営</dd>
+              </div>
+            </dl>
+            <figure>
+              <img class="last-img" src="img/company.jpg" alt="オフィスのイメージ画像" loading="lazy" width="1000" height="933">
+            </figure>
+          </div>
+        </section>
+      </div>
   </main>
-
 
   <footer class="footer wrapper">
     <div class="footer-last-info">
@@ -201,11 +156,8 @@ Company
         <li>T/99-9999-9999</li>
       </ul>
     </div>
-
     <p class="copy-right"><small>&copy; Web Entertainment Design Inc.</small></p>
   </footer>
-  </div>
-  </div>
 </body>
 
 </html>
