@@ -13,8 +13,6 @@ body {
     font-style: normal;
     font-family: 'Noto Sans JP', sans-serif;
     box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
 }
 
 .wrapper {
@@ -32,8 +30,9 @@ li {
 a {
     color: #514e4e;
     text-decoration: none;
-    padding: 0px;
-    margin: 0px;
+    display: inline-block;
+    align-items: center;
+    line-height: 0;
 }
 
 img {
@@ -44,38 +43,36 @@ img {
 }
 
 /* ヘッダー */
-.header {
-    width: 100%;
-    min-width: 370px;
-    height: auto;
+.main_nav_wrapper {
+    width: 90%;
+    height: 80px;
     margin: 0 auto;
-    padding: 1rem;
-    padding-top: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.logo {
+    display: block;
+    max-width: 80px;
+    margin-bottom: 10px;
+    height: auto;
+    line-height: 0;
+}
+
+
+.nav_menu_list {
+    display: flex;
+    justify-content: left;
+    gap: 20px;
+    line-height: 1;
+    font-size: 1.5rem;
+    font-weight: 500;
 }
 
 .contact {
     display: none;
-}
-
-h1 {
-    padding: 0;
-    margin-bottom: 5px;
-}
-
-.logo {
-    width: 20%;
-    min-width: 80px;
-    height: auto;
-    margin: 20px 10px 30px 10px;
-}
-
-.nav_menu {
-    display: flex;
-    justify-content: space-around;
-    line-height: 1;
-    font-size: 1.5rem;
-    font-weight: 500;
-    margin-left: -10px;
 }
 
 /* メイン */
