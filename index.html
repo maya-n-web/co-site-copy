@@ -18,7 +18,7 @@
 
 <body>
   <header class="header" id="header">
-    <nav class="main_nav_wrapper">
+    <nav class="nav_wrapper">
       <h1 class="logo">
         <a href="index.html">
           <img src="img/logo.svg" alt="Web Entertainment Design" width="50" height="50">
@@ -35,31 +35,30 @@
     </nav>
   </header>
 
-  <main class="main">
+  <main>
     <img class="main_img" src="img/mainvisual.jpg" alt="オフィスのイメージ画像" loading="lazy" width="1400" height="600">
     <div class="wrapper">
 
       <section>
-        <div class="news">
+        <div class="news_wrapper">
           <h2 id="news">NEWS</h2>
           <span class="sub_title">ニュース</span>
           <ul class="news_title">
             <li>
-              <article class="art1">
+              <article>
                 <time datetime="2021-01-01">2021.01.01</time>
-                <span>NEWS</span><br>
                 <a class="heading_title" href="#">タイトルタイトルタイトルタイトル</a>
               </article>
             </li>
             <li>
               <article>
-                <time datetime="2021-01-01">2021.01.01</time><span>NEWS</span><br>
+                <time datetime="2021-01-01">2021.01.01</time>
                 <a class="heading_title" href="#">タイトルタイトルタイトルタイトル</a>
               </article>
             </li>
             <li>
               <article>
-                <time datetime="2021-01-01">2021.01.01</time><span>NEWS</span><br>
+                <time datetime="2021-01-01">2021.01.01</time>
                 <a class="heading_title" href="#">タイトルタイトルタイトルタイトル</a>
               </article>
             </li>
@@ -68,7 +67,7 @@
       </section>
 
       <section>
-        <div class="about_box">
+        <div class="about_wrapper">
           <img class="about_img" src="img/about.jpg" alt="イメージ画像" loading="lazy" width="1400" height="600">
           <div class="about">
             <h2 id="about">ABOUT</h2>
@@ -86,7 +85,7 @@
         </div>
       </section>
 
-      <div class="bus_com_wrapper">
+      <div class="bus_wrapper">
         <section>
           <div class="bus">
             <div class="bus_top">
@@ -94,18 +93,18 @@
               <span class="sub_title">事業内容</span>
             </div>
             <ul class="bus_list">
-              <li class="list">Web制作・マーケティング<br>
+              <li>Web制作・マーケティング<br>
                 <img class="bus_img" src="img/business1.jpg" alt="ミーティングイメージ画像" loading="lazy" width="1000"
                   height="933">
               </li>
-              <li class="list">プロモーション企画・制作<br>
+              <li>プロモーション企画・制作<br>
                 <img class="bus_img" src="img/business3.jpg" alt="カメラの画像" loading="lazy" width="1000" height="933">
               </li>
-              <li class="list">インターネットメディア事業<br>
+              <li>インターネットメディア事業<br>
                 <img class="bus_img" src="img/business2.jpg" alt="YouTubeのホーム画面" loading="lazy" width="1000"
                   height="933">
               </li>
-              <li class="list">ソーシャル企画・制作<br>
+              <li>ソーシャル企画・制作<br>
                 <img class="bus_img" src="img/business4.jpg" alt="アプリのアイコン" loading="lazy" width="1000" height="933">
               </li>
             </ul>
@@ -113,41 +112,44 @@
         </section>
 
         <section>
-          <div class="company">
-            <h2 id="company">COMPANY</h2>
-            <span class="sub_title">会社情報</span>
-            <dl class="info">
-              <dt>会社名</dt>
-              <dd>ウェブエンターテイメントデザイン株式会社</dd>
-              <dt>所在地</dt>
-              <dd>東京都渋谷区桜丘町99-9 West Building 3F</dd>
-              <dt>代表</dt>
-              <dd>ＸＸＸＸＸＸ</dd>
-              <dt>設立</dt>
-              <dd>2021年1月1日</dd>
-              <dt>資本金</dt>
-              <dd>3,000,000円</dd>
-              <dt>事業内容</dt>
-              <div class="com_list">
-                <dd>Web制作・マーケティング</dd>
-                <dd>インターネットメディア事業</dd>
-                <dd>プロモーション企画・制作</dd>
-                <dd>ソーシャル企画・運営</dd>
-              </div>
-            </dl><br>
-            <figure>
-              <img class="last_img" src="img/company.jpg" alt="オフィスのイメージ画像" loading="lazy" width="1000" height="933">
-            </figure><br>
+          <div class="company_wrapper">
+            <div class="company_back_ground">
+              <h2 id="company">COMPANY</h2>
+              <span class="sub_title">会社情報</span>
+              <dl class="info">
+                <dt>会社名</dt>
+                <dd>ウェブエンターテイメントデザイン株式会社</dd>
+                <dt>所在地</dt>
+                <dd>東京都渋谷区桜丘町99-9 West Building 3F</dd>
+                <dt>代表</dt>
+                <dd>ＸＸＸＸＸＸ</dd>
+                <dt>設立</dt>
+                <dd>2021年1月1日</dd>
+                <dt>資本金</dt>
+                <dd>3,000,000円</dd>
+                <dt>事業内容</dt>
+                <div class="company_info_list_last">
+                  <dd>Web制作・マーケティング</dd>
+                  <dd>インターネットメディア事業</dd>
+                  <dd>プロモーション企画・制作</dd>
+                  <dd>ソーシャル企画・運営</dd>
+                </div>
+              </dl>
+            </div>
           </div>
-        </section>
+          <figure>
+            <img class="last_img" src="img/company.jpg" alt="オフィスのイメージ画像" loading="lazy" width="1000" height="933">
+          </figure>
       </div>
+      </section>
+    </div>
     </div>
   </main>
 
   <footer class="footer wrapper">
-    <div class="footer_last_info">
+    <div class="footer_info">
       <img class="logo last_logo" src="img/logo.svg" alt="Web Entertainment Design" width="50" height="50">
-      <ul class="last_info">
+      <ul class="footer_last_info">
         <li>Web Entertainment Design Inc.</li>
         <li>West Building 3F</li>
         <li>9-99 Sakuragaokacho Shibuya-ku</li>
