@@ -25,7 +25,7 @@ body {
     letter-spacing: 0.1rem;
 }
 
-li {
+ul {
     list-style: none;
 }
 
@@ -151,7 +151,7 @@ time::after {
 
 /* ABOUT */
 .about,
-.bus {
+.bus_wrapper {
     display: flex;
     flex-direction: column;
     margin: 30px 10px 80px 10px;
@@ -163,7 +163,7 @@ time::after {
 }
 
 .about_img {
-    width: 100%;
+    width: 100vw;
     max-height: 400px;
 }
 
@@ -485,8 +485,7 @@ time::after {
 
 
     .last_img {
-        width: 60%;
-        height: auto;
+        max-width: 60%;
         position: absolute;
         bottom: 150px;
         right: 10px;
